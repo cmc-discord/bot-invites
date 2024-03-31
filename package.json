@@ -1,0 +1,53 @@
+{
+  "name": "bot-invites",
+  "version": "1.0.0",
+  "description": "Discord bot for managing invitations and applications for the CMC server.",
+  "main": "src/main.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "dev": "ts-node-dev --watch \".\" --ignore-watch \"prisma/.data/sqlite.db\" --notify \"src/main.ts\"",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmc-discord/bot-invites.git"
+  },
+  "keywords": [
+    "discord",
+    "discord-bot",
+    "discord.js",
+    "discord-js",
+    "discordjs",
+    "moderation"
+  ],
+  "author": "Up",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/cmc-discord/bot-invites/issues"
+  },
+  "homepage": "https://github.com/cmc-discord/bot-invites#readme",
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^1.7.0",
+    "@types/node": "^20.11.30",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "node-notifier": "^10.0.1",
+    "prisma": "^5.11.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "@discordjs/formatters": "^0.3.3",
+    "@prisma/client": "^5.11.0",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.26.2",
+    "slash-create": "^6.0.2"
+  }
+}

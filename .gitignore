@@ -1,0 +1,14 @@
+# NodeJS
+node_modules/
+dist/
+
+# Prisma
+prisma/.data/
+
+# VS Code
+.vscode/
+
+# Misc
+.env
+.env.*
+!.env.example
